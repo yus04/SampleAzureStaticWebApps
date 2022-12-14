@@ -1,8 +1,8 @@
-hello world
+hello world<b id="res">...</b>
 
 <script>
 (async function() {
-    const { text } = await( await fetch(`/api/HttpTrigger1`));
-    document.querySelector('#name').textContent = text;
+    const { text } = await( await fetch(`/api/HttpTrigger1`).res);
+    document.querySelector('#res').textContent = text;
 }());
 </script>
