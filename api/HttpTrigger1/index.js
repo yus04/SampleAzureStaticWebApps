@@ -1,4 +1,5 @@
 module.exports = async function (context) {
+    //
     context.res.json({
         time: get_time()
     });
