@@ -6,7 +6,7 @@ module.exports = async function (context) {
 };
 
 function show_time(){
-    return 10;
+    return "10";
 }
 
 const date = new Date(); //現在時刻を取得
