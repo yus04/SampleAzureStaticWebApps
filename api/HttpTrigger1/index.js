@@ -13,10 +13,10 @@ function get_time(){
     var hour = now.getHours();
     var minute = now.getMinutes();
     return (
-        toString(year) + "/" + 
-        toString(month) + "/" +
-        toString(date) + " " +
-        toString(hour) + ":" +
-        toString(minute)
+        year + "/" + 
+        month + "/" +
+        date + " " +
+        hour + ":" +
+        minute
     );
 }
