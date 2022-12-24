@@ -12,13 +12,11 @@ function get_time(){
     const date = now.getDate();
     const hour = now.getHours();
     const minute = now.getMinutes();
-    const second = now.getSeconds();
     return (
-        toString(year) + "年" + 
-        toString(month) + "月" +
-        toString(date) + "日" +
-        toString(hour) + "時" +
-        toString(minute) + "分" +
-        toString(second) + "秒"
+        toString(year) + "/" + 
+        toString(month) + "/" +
+        toString(date) + " " +
+        toString(hour) + ":" +
+        toString(minute)
     );
 }
