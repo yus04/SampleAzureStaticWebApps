@@ -13,7 +13,7 @@ function get_time(){
     const minute = now.getMinutes();
     const second = now.getSeconds();
     return (
-        now.year
+        year
         // toString(year) + "年" + 
         // toString(month) + "月" +
         // toString(date) + "日" +
