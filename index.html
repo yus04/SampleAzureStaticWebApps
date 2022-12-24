@@ -3,7 +3,7 @@
 
 <script>
 (async function() {
-    const json = await( await fetch(`/api/HttpTrigger1`)).json();
+    const { json } = await( await fetch(`/api/HttpTrigger1`)).json();
     document.querySelector('#res').textContent = json.time;
     document.querySelector('#res2').textContent = json.context;
 }());
