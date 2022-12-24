@@ -1,11 +1,10 @@
 module.exports = async function (context) {
-    var time = get_time();
     context.res.json({
-        time: time
+        time: get_time()
     });
 };
 
-function show_time(){
+function get_time(){
     const now = new Date();
     const year = now.getFullYear();
     const month = now.getMonth() + 1;
