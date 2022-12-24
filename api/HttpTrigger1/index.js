@@ -1,7 +1,7 @@
 module.exports = async function (context) {
     console.log(context);
     context.res.json({
-        text: "Hello from the API"
+        text: "Hello from the API2"
     });
 };
 
