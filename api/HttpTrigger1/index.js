@@ -6,12 +6,12 @@ module.exports = async function (context) {
 };
 
 function get_time(){
-    const now = new Date();
-    const year = now.getFullYear();
-    const month = now.getMonth() + 1;
-    const date = now.getDate();
-    const hour = now.getHours();
-    const minute = now.getMinutes();
+    var now = new Date();
+    var year = now.getFullYear();
+    var month = now.getMonth()+1;
+    var date = now.getDate();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
     return (
         toString(year) + "/" + 
         toString(month) + "/" +
