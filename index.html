@@ -3,7 +3,6 @@
 <script>
 (async function() {
     const { time } = await( await fetch(`/api/HttpTrigger1`)).json();
-    // document.querySelector('#res').textContent = "現在時刻は" + time + "です。";
-    document.querySelector('#res').textContent = time;
+    document.querySelector('#res').textContent = "現在時刻は" + time + "です。";
 }());
 </script>
