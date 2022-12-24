@@ -1,6 +1,7 @@
 module.exports = async function (context) {
+    var time = show_time();
     context.res.json({
-        text: context
+        text: string(time) + string(context),
     });
 };
 
