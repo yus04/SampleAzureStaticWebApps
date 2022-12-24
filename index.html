@@ -1,8 +1,10 @@
 <b id="res">...</b>
+<b id="res2">...</b>
 
 <script>
 (async function() {
-    const { text } = await( await fetch(`/api/HttpTrigger1`)).json();
-    document.querySelector('#res').textContent = text;
+    const json = await( await fetch(`/api/HttpTrigger1`)).json();
+    document.querySelector('#res').textContent = json.time;
+    document.querySelector('#res2').textContent = json.context;
 }());
 </script>
